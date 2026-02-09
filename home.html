@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | Alberto Ramírez Díaz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header principal con navegación -->
+    <header class="site-header" aria-label="Cabecera principal">
+      <div class="brand">
+        <span class="brand-name">ALBERTO RAMÍREZ DÍAZ</span>
+        <span class="brand-role">Desarrollador Web (DAW) en formación</span>
+      </div>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="home.html" aria-current="page">Home</a>
+        <a href="index.html">Biografía</a>
+        <a href="skills.html">Skills</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main class="page">
+      <!-- Hero con foto + resumen -->
+      <section class="hero hero--home section" aria-label="Presentación">
+        <div class="photo-frame">
+          <!-- Sustituye la imagen por tu foto real en assets/mi-foto.jpg -->
+          <img class="profile-photo" src="assets/FotoCV.jpg" alt="Foto de Alberto Ramírez Díaz" />
+          <span class="photo-label">Foto</span>
+        </div>
+
+        <div class="card hero-card glow">
+          <p class="eyebrow">Home</p>
+          <h1>Hola, soy Alberto. Resuelvo problemas con código.</h1>
+          <p class="lead">
+            Me considero una persona con habilidades para resolver problemas, voluntad de aprender y excelente capacidad
+            de comunicación. Soy curioso y me involucro activamente en la búsqueda de soluciones creativas, siempre
+            dispuesto a explorar nuevas tecnologías y enfoques que aporten valor al equipo y al proyecto.
+          </p>
+          <div class="cta">
+            <a class="btn" href="proyectos.html">Ver proyectos</a>
+            <a class="btn btn--ghost" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carrusel de proyectos -->
+      <section class="section" aria-label="Carrusel de proyectos">
+        <div class="section-header">
+          <h2>Proyectos en foco</h2>
+          <div class="carousel-controls">
+            <button class="btn btn--ghost" type="button" data-dir="-1">◀</button>
+            <button class="btn btn--ghost" type="button" data-dir="1">▶</button>
+          </div>
+        </div>
+        <div class="carousel" id="project-carousel">
+          <article class="carousel-card">
+            <h3>FitTrack</h3>
+            <p>SPA fitness con React/Angular + APIs + UI/UX.</p>
+            <p class="muted">JS · React/Angular · Figma</p>
+            <a class="project-link" href="https://github.com/AlbertoRamirezD/FitTrack" target="_blank" rel="noopener">Ver repositorio</a>
+          </article>
+          <article class="carousel-card">
+            <h3>ZonaCine</h3>
+            <p>Mini app móvil consumiendo API en tiempo real.</p>
+            <p class="muted">SDK móvil · API REST · JS</p>
+            <a class="project-link" href="https://github.com/AlbertoRamirezD/ZonaCine" target="_blank" rel="noopener">Ver repositorio</a>
+          </article>
+          <article class="carousel-card">
+            <h3>AutoDocAI</h3>
+            <p>Documentación técnica automática con IA.</p>
+            <p class="muted">JS · Git · Markdown</p>
+            <a class="project-link" href="https://github.com/AlbertoRamirezD/AutoDocAi" target="_blank" rel="noopener">Ver repositorio</a>
+          </article>
+          <article class="carousel-card">
+            <h3>Extra</h3>
+            <p>Espacio para próximos proyectos.</p>
+            <p class="muted">En progreso</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Resumen express de tecnologías -->
+      <section class="section" aria-label="Resumen express de tecnologías">
+        <div class="section-header">
+          <h2>Resumen express</h2>
+          <p class="muted">Tecnologías que controlo organizadas por áreas.</p>
+        </div>
+        <div class="tech-grid">
+          <div class="card tech-card">
+            <h3>Frontend</h3>
+            <div class="tag-grid">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive</span>
+              <span>Angular</span>
+              <span>React</span>
+              <span>Bootstrap</span>
+              <span>Tailwind</span>
+            </div>
+          </div>
+          <div class="card tech-card">
+            <h3>Backend</h3>
+            <div class="tag-grid">
+              <span>Java</span>
+              <span>Node.js</span>
+              <span>API REST</span>
+              <span>C# / .NET</span>
+            </div>
+          </div>
+          <div class="card tech-card">
+            <h3>Datos</h3>
+            <div class="tag-grid">
+              <span>MySQL</span>
+              <span>SQL avanzado</span>
+              <span>Diseño BD</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+          <div class="card tech-card">
+            <h3>Herramientas</h3>
+            <div class="tag-grid">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Docker</span>
+              <span>Postman</span>
+              <span>Figma</span>
+              <span>VS Code</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer con navegación secundaria y redes -->
+    <footer class="site-footer" aria-label="Pie de página">
+      <div class="footer-inner">
+        <div>
+          <h3>Secciones</h3>
+          <ul class="footer-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Biografía</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Redes</h3>
+          <ul class="footer-links">
+            <li><a href="https://github.com/AlbertoRamirezD" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/alberto-ram%C3%ADrez-d%C3%ADaz/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:albertoramirezdiaz03@gmail.com">Email</a></li>
+          </ul>
+          <p class="muted footer-note">Actualiza los enlaces de redes con tus URLs reales.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Carrusel simple con scroll horizontal
+      const carousel = document.getElementById('project-carousel');
+      const buttons = document.querySelectorAll('.carousel-controls button');
+
+      buttons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const dir = Number(btn.getAttribute('data-dir')) || 1;
+          const cardWidth = carousel.querySelector('.carousel-card')?.offsetWidth || 280;
+          carousel.scrollBy({ left: dir * (cardWidth + 16), behavior: 'smooth' });
+        });
+      });
+    </script>
+  </body>
+</html>
