@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Biografía | Alberto Ramírez Díaz</title>
+    <title>Home | Alberto Ramírez Díaz</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -14,154 +14,124 @@
         <span class="brand-role">Desarrollador Web (DAW) en formación</span>
       </div>
       <nav class="nav" aria-label="Navegación principal">
-        <a href="home.html">Home</a>
-        <a href="index.html" aria-current="page">Biografía</a>
-        <a href="skills.html">Skills</a>
-        <a href="proyectos.html">Proyectos</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="pages/biografia.html">Biografía</a>
+        <a href="pages/skills.html">Skills</a>
+        <a href="pages/proyectos.html">Proyectos</a>
+        <a href="pages/contacto.html">Contacto</a>
       </nav>
     </header>
 
     <!-- Contenedor principal -->
     <main class="page">
-      <!-- Sección biografía / hero -->
-      <section class="hero section" aria-label="Biografía">
-        <div class="card hero-card">
-          <p class="eyebrow">Biografía</p>
-          <h1>Me gusta crear soluciones claras, útiles y bien cuidadas.</h1>
+      <!-- Hero con foto + resumen -->
+      <section class="hero hero--home section" aria-label="Presentación">
+        <div class="photo-frame">
+          <!-- Sustituye la imagen por tu foto real en assets/mi-foto.jpg -->
+          <img class="profile-photo" src="assets/FotoCV.jpg" alt="Foto de Alberto Ramírez Díaz" />
+          <span class="photo-label">Foto</span>
+        </div>
+
+        <div class="card hero-card glow">
+          <p class="eyebrow">Home</p>
+          <h1>Hola, soy Alberto. Resuelvo problemas con código.</h1>
           <p class="lead">
             Me considero una persona con habilidades para resolver problemas, voluntad de aprender y excelente capacidad
             de comunicación. Soy curioso y me involucro activamente en la búsqueda de soluciones creativas, siempre
-            dispuesto a explorar nuevas tecnologías, metodologías y enfoques que aporten valor al equipo y al proyecto.
+            dispuesto a explorar nuevas tecnologías y enfoques que aporten valor al equipo y al proyecto.
           </p>
           <div class="cta">
-            <a class="btn" href="mailto:albertoramirezdiaz03@gmail.com">Escríbeme</a>
-            <a class="btn btn--ghost" href="contacto.html">Ver contacto</a>
+            <a class="btn" href="pages/proyectos.html">Ver proyectos</a>
+            <a class="btn btn--ghost" href="pages/contacto.html">Contacto</a>
           </div>
+        </div>
+      </section>
 
-          <!-- Bloque visual de estadísticas -->
-          <div class="stats" aria-label="Resumen rápido">
-            <div class="stat">
-              <span class="stat-number">2026</span>
-              <span class="stat-label">Finalización DAW</span>
+      <!-- Carrusel de proyectos -->
+      <section class="section" aria-label="Carrusel de proyectos">
+        <div class="section-header">
+          <h2>Proyectos en foco</h2>
+          <div class="carousel-controls">
+            <button class="btn btn--ghost" type="button" data-dir="-1">◀</button>
+            <button class="btn btn--ghost" type="button" data-dir="1">▶</button>
+          </div>
+        </div>
+        <div class="carousel" id="project-carousel">
+          <article class="carousel-card">
+            <h3>FitTrack</h3>
+            <p>SPA fitness con React/Angular + APIs + UI/UX.</p>
+            <p class="muted">JS · React/Angular · Figma</p>
+            <a class="project-link" href="https://github.com/AlbertoRamirezD/FitTrack" target="_blank" rel="noopener">Ver repositorio</a>
+          </article>
+          <article class="carousel-card">
+            <h3>ZonaCine</h3>
+            <p>Mini app móvil consumiendo API en tiempo real.</p>
+            <p class="muted">SDK móvil · API REST · JS</p>
+            <a class="project-link" href="https://github.com/AlbertoRamirezD/ZonaCine" target="_blank" rel="noopener">Ver repositorio</a>
+          </article>
+          <article class="carousel-card">
+            <h3>AutoDocAI</h3>
+            <p>Documentación técnica automática con IA.</p>
+            <p class="muted">JS · Git · Markdown</p>
+            <a class="project-link" href="https://github.com/AlbertoRamirezD/AutoDocAi" target="_blank" rel="noopener">Ver repositorio</a>
+          </article>
+          <article class="carousel-card">
+            <h3>Extra</h3>
+            <p>Espacio para próximos proyectos.</p>
+            <p class="muted">En progreso</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Resumen express de tecnologías -->
+      <section class="section" aria-label="Resumen express de tecnologías">
+        <div class="section-header">
+          <h2>Resumen express</h2>
+          <p class="muted">Tecnologías que controlo organizadas por áreas.</p>
+        </div>
+        <div class="tech-grid">
+          <div class="card tech-card">
+            <h3>Frontend</h3>
+            <div class="tag-grid">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive</span>
+              <span>Angular</span>
+              <span>React</span>
+              <span>Bootstrap</span>
+              <span>Tailwind</span>
             </div>
-            <div class="stat">
-              <span class="stat-number">25</span>
-              <span class="stat-label">Tecnologías listadas</span>
+          </div>
+          <div class="card tech-card">
+            <h3>Backend</h3>
+            <div class="tag-grid">
+              <span>Java</span>
+              <span>Node.js</span>
+              <span>API REST</span>
+              <span>C# / .NET</span>
             </div>
-            <div class="stat">
-              <span class="stat-number">Sevilla</span>
-              <span class="stat-label">Base actual</span>
+          </div>
+          <div class="card tech-card">
+            <h3>Datos</h3>
+            <div class="tag-grid">
+              <span>MySQL</span>
+              <span>SQL avanzado</span>
+              <span>Diseño BD</span>
+              <span>MongoDB</span>
             </div>
           </div>
-        </div>
-
-        <!-- Tarjeta con datos rápidos -->
-        <div class="card hero-card">
-          <h2 class="block-title">Ficha rápida</h2>
-          <ul class="list">
-            <li><span class="label">Teléfono:</span> <a href="tel:+34601279551">+34 601 279 551</a></li>
-            <li><span class="label">Email:</span> <a href="mailto:albertoramirezdiaz03@gmail.com">albertoramirezdiaz03@gmail.com</a></li>
-            <li><span class="label">Ubicación:</span> 41019 Sevilla, España</li>
-            <li><span class="label">Idiomas:</span> Inglés (medio/alto)</li>
-            <li><span class="label">Certificación:</span> Carnet de conducir</li>
-            <li><span class="label">Afiliaciones:</span> Aficionado al fútbol, feriante y cofrade</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Sección habilidades personales -->
-      <section class="section" aria-label="Habilidades personales">
-        <div class="section-header">
-          <h2>Habilidades personales</h2>
-          <p class="muted">Comunicación clara, curiosidad técnica y enfoque en la solución.</p>
-        </div>
-        <div class="card">
-          <ul class="chips">
-            <li>Resolutivo bajo presión</li>
-            <li>Trabajo en equipo</li>
-            <li>Curioso y proactivo</li>
-            <li>Aprendizaje rápido</li>
-            <li>Liderazgo en situaciones de estrés</li>
-            <li>Excelente trato con el cliente</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Sección experiencia -->
-      <section class="section" aria-label="Experiencia">
-        <div class="section-header">
-          <h2>Experiencia</h2>
-          <p class="muted">Responsabilidad, seguridad y trabajo en equipo.</p>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-date">Junio 2024 – Septiembre 2024</div>
-            <div class="timeline-role">Dreampool — Socorrista</div>
-            <div class="timeline-place">Sevilla, España</div>
-            <ul class="list">
-              <li>Competencia en primeros auxilios y RCP para apoyo óptimo a personas en peligro.</li>
-              <li>Supervisión del área de piscina, cumplimiento de normas y seguridad de los nadadores.</li>
-              <li>Mantenimiento de estándares de higiene en piscina y zonas comunes.</li>
-            </ul>
+          <div class="card tech-card">
+            <h3>Herramientas</h3>
+            <div class="tag-grid">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Docker</span>
+              <span>Postman</span>
+              <span>Figma</span>
+              <span>VS Code</span>
+            </div>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-date">Experiencia en eventos</div>
-            <div class="timeline-role">Organización de eventos y servicio</div>
-            <ul class="list">
-              <li>Compra a proveedores.</li>
-              <li>Montaje de eventos multitudinarios.</li>
-              <li>Atención de servicio en barra de comida y bebida.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Sección formación -->
-      <section class="section" aria-label="Formación">
-        <div class="section-header">
-          <h2>Formación</h2>
-          <p class="muted">Recorrido académico y certificaciones.</p>
-        </div>
-        <div class="section-grid">
-          <div class="card">
-            <ul class="list">
-              <li>
-                <span class="label">Grado en ADE</span>
-                <div class="muted">Universidad de Sevilla (3 años, no finalizado)</div>
-              </li>
-              <li>
-                <span class="label">Auxiliar de Comercio</span>
-                <div class="muted">Cámara de Comercio de Valencia (100 horas)</div>
-              </li>
-              <li>
-                <span class="label">GS Desarrollo de Aplicaciones Web</span>
-                <div class="muted">ADA Instituto Tecnológico Superior — Finalización prevista para Junio de 2026</div>
-              </li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3 class="block-title">Idiomas</h3>
-            <p class="muted">Inglés (medio/alto)</p>
-            <h3 class="block-title">Certificaciones</h3>
-            <p class="muted">Carnet de conducir</p>
-            <h3 class="block-title">Afiliaciones</h3>
-            <p class="muted">Aficionado al fútbol, feriante y cofrade.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Sección hobbies -->
-      <section class="section" aria-label="Hobbies">
-        <div class="section-header">
-          <h2>Hobbies</h2>
-          <p class="muted">Lo que me recarga fuera del trabajo.</p>
-        </div>
-        <div class="card">
-          <p>
-            En mi tiempo libre me gusta mucho sociabilizar, leer y viajar. Creo que mi forma de ser se ha enriquecido
-            mucho gracias a pasar tiempo fuera de casa.
-          </p>
         </div>
       </section>
     </main>
@@ -172,11 +142,11 @@
         <div>
           <h3>Secciones</h3>
           <ul class="footer-links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="index.html">Biografía</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/biografia.html">Biografía</a></li>
+            <li><a href="pages/skills.html">Skills</a></li>
+            <li><a href="pages/proyectos.html">Proyectos</a></li>
+            <li><a href="pages/contacto.html">Contacto</a></li>
           </ul>
         </div>
         <div>
@@ -190,5 +160,19 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // Carrusel simple con scroll horizontal
+      const carousel = document.getElementById('project-carousel');
+      const buttons = document.querySelectorAll('.carousel-controls button');
+
+      buttons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const dir = Number(btn.getAttribute('data-dir')) || 1;
+          const cardWidth = carousel.querySelector('.carousel-card')?.offsetWidth || 280;
+          carousel.scrollBy({ left: dir * (cardWidth + 16), behavior: 'smooth' });
+        });
+      });
+    </script>
   </body>
 </html>
